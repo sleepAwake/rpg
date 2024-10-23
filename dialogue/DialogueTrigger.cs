@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public bool player_InRange = false;
-
     [SerializeField]
     private TextAsset inkJSON;
 
@@ -18,8 +16,6 @@ public class DialogueTrigger : MonoBehaviour
             {
                 DialogueManager.GetInstance().EnterDialogue(inkJSON);
             }
-        }
-
-        
+        } 
     }
 }
